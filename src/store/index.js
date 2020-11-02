@@ -43,7 +43,7 @@ const store = new Vuex.Store({
     },
     movingCard(state, payload) {
       state.lists = payload.lists
-    }
+    },
   },
   actions: {
     addlist(context, payload) {  // payloadは引数で指定された値を表している
@@ -60,7 +60,7 @@ const store = new Vuex.Store({
     },
     movingCard(context, payload) {
       context.commit('movingCard', payload)
-    }
+    },
   },
   getters: {
     totalCardCount(state) {
